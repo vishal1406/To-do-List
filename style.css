@@ -1,0 +1,147 @@
+h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 125%;
+        }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+       }
+    75% {
+        font-size: 300%;
+                /*margin-left: 25%*/;
+        width: 150%;
+        }
+   }
+.InpAdd{
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+       }
+   }
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.heading{
+    height: 100px;
+    width: 100%;
+    background-color: orangered;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 3s;
+}
+@keyframes example {
+    from {background-color: orangered;}
+    to {background-color: olivedrab;}
+}
+.InpAdd{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: sandybrown;
+}
+.input{
+    width: 50%;
+    margin-top: 30px;
+}
+#add{
+    height: 35%;
+    display: inline-block;
+    background-color:#fc999b;
+    color:#ffffff;
+    border-radius: 5px;
+    text-align:center;
+    margin-top: 42%;
+    margin-left: 5px;
+    padding: 5px 15px;
+    transition:all 0.5s;
+}
+#add span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#add span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#add:hover span {
+  padding-right: 5px;
+}
+
+#add:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#inp{
+    height: 35%;
+    width: 100%;
+    font-size: 20px;
+}
+.res{
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+}
+li{
+    height: 80px;
+    font-size: 23px;
+}
+
+.fa-close:hover{
+    transition: 0.5s ease;
+    transform: rotate(180deg);
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.newinp{
+height: 30px;
+    font-size: 20px;
+}
+
+.elem{
+    margin: 20px;
+}
+
+.update{
+    background-color:#fc999b;
+    color:#ffffff;
+    border-radius: 5px;
+    text-align:center;
+    height: 35%;
+}
+
+.delete{
+float: right;
+    margin-right: 20px;
+}
